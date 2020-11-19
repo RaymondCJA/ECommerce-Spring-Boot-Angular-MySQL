@@ -1,1 +1,5 @@
-<p>product-list works!</p>
+<!-- what will be shown by the product list component -->
+
+<p *ngFor="let tempProduct of products">
+    {{ tempProduct.name }}: {{ tempProduct.unitPrice | currency: 'AUD' }}
+</p>
