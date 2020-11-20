@@ -1,0 +1,25 @@
+Build at: 2020-11-20T06:33:07.700Z - Hash: 2b8de048a8242fe8b41b - Time: 512ms
+
+√ Compiled successfully.
+
+    Error: src/app/app.module.ts:12:5 - error NG6001: The class 'ProductListComponent' is listed in the declarations of the NgModule 'AppModule', but is not a directive, a 
+component, or a pipe. Either remove it from the NgModule's declarations, or add an appropriate Angular decorator.
+
+    12     ProductListComponent
+           ~~~~~~~~~~~~~~~~~~~~
+
+      src/app/components/product-list/product-list.component.ts:11:14
+        11 export class ProductListComponent implements OnInit {
+                        ~~~~~~~~~~~~~~~~~~~~
+        'ProductListComponent' is declared here.
+    src/app/components/product-list/product-list-table.component.html:19:44 - error NG8004: No pipe found with name 'currency'.
+
+    19             <td>{{ tempProduct.unitPrice | currency:'AUD' }}</td>
+                                                  ~~~~~~~~
+
+      src/app/components/product-list/product-list.component.ts:7:16
+        7   templateUrl: './product-list-table.component.html',
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Error occurs in the template of component ProductListComponent.
+
+error has been occuring for a while now.
